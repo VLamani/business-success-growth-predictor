@@ -24,24 +24,27 @@ function PredictionForm({
 
   const handlePredict = async () => {
 
-    try {
+  try {
 
-      const response = await axios.post(
-        'http://127.0.0.1:5000/predict',
-        formData
-      );
+    const API_URL =
+      "https://startup-success-backend.onrender.com";
 
-      setResult(response.data);
+    const response = await axios.post(
+      `${API_URL}/predict`,
+      formData
+    );
 
-    } catch (error) {
+    setResult(response.data);
 
-      console.error(error);
+  } catch (error) {
 
-      alert('Prediction Failed');
+    console.error(error);
 
-    }
+    alert('Prediction Failed');
 
-  };
+  }
+
+};
 
   const generateSampleStartup = () => {
 
