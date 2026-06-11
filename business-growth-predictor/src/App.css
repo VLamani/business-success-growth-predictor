@@ -1,0 +1,21 @@
+body{
+  background:#f4f7fc;
+}
+
+.card{
+  border:none;
+  border-radius:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.navbar{
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.alert{
+  border-radius:15px;
+}
+
+.btn{
+  border-radius:12px;
+}
